@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Analysis - Application and Presentation</title>
+  </head>
+  <body>
+    <h1>Which Kind of Chocolate is Sold the Most in the United States?</h1>
+    <p>When looking at <a href="https://www.kaggle.com/datasets/prajwal6362venom/choclate-sales-project?resource=download">this data set</a> 
+      of chocolate sales conducted around the world 
+      I wondered what chocolate specifically sold 
+      the most units in the United States. Analysis
+      began by downloading the csv file from Kaggle. 
+      Then, I opened a Google Sheets file and 
+      imported the csv file to be analyzed. </p>
+    <h2>Process</h2>
+    <p>The goal of this analysis is to narrow the data from the 
+        given set down to just chocolate sold in the United States
+        as well as organize the chocolate sales by type of chocolate 
+        sold. In order to accomplish this I began by trimming fat 
+        from the original data source. The original data included a 
+        lot of collumns that were unnecessary for the data I was 
+        looking for. I began by deleting all the data on the seller,
+        which was followed by deletion of cost, cost per unit, profit
+        , profit percentage, sale amount. The only data I needed was 
+        the units sold. After deleting those columns I needed to sort
+        the chocolate sales by region and filter out all sales not in
+        the United States. Accomplishing this required sorting the 
+        region collumn alphabetically. Once rows were sorted this way 
+        all of the sales were grouped up by region. Next, I simpiliy 
+        deleted all the sales that were'nt in the United States. Next,
+        I had to group the sales by what kind of chocolate was sold. 
+        So I deleted the region column since I didn't need it anymore,
+        then I alphabatized the data by what kind of chocolate was 
+        sold so that all the sales would be organized by chocolate type.
+        Finally, I created a new chart in order to add up the total 
+        ammount of each kind of chocolate sold. I did this by creating
+        a row for each type of chocolate sold and then a corresponding
+        column for how many units of that chocolate sold. I determined 
+        the nummber of units sold by using the SUM function in Google 
+        Sheets in order to get the total number of units sold from each
+        individual sale tallied up.
+    </p>
+    <h2>Results</h2>
+    <p><img src="Units Sold vs. Product.pdf" alt="Graph of Data"></p>
+    <p>Based on the graph the result for which chocolate sold the most 
+        seems to be very close between 70% Dark Bites and Rasberry 
+        Choco. But by using Google Sheets it is clear that Rasberry
+        Choco has the most units sold at 912 units, whicle 70% Dark 
+        Bites has 903 sales.
+    </p>
+    <h1>Khan Academy Report</h1>
+    <h2>Data Tools</h2>
+    <p>In this module I learned different ways to store data as well as different ways to interpret data. The main lesson I took away from this module is that data is contextual. Just because there is a correlation doesn’t mean that there is causation. Applying the necessary context to data is key in order to ensure it is being used properly. Data can then be used to make inferences or predictions based on  the data when the data is properly used in its context. </p>
+    <h2>Big Data</h2>
+    <p>In this module I realized how much data there actually is in  the world. Big data can be pretty tricky to sort however with the use of parallel processing data can be sorted much faster. Storing data is another issue that is facing  the tech industry as more and more data continues to be collected. Server rooms are gigantic and require serious amounts of space and hardware in order to function. Based on the sheer amount of data there is and the current limitations we face with sorting and storing data, something needs to change soon in order to make big data more manageable if we are going to continue to collect more and more data.</p> 
+    <h2>Bias in Machine Learning</h2>
+    <p>This module made it clear to me that bias from humans can be very easily put onto a machine learning algorithm even if the humans creating it didn’t intend for that to be the case. Training a machine learning algorithm is incredibly difficult and impossible to truly do bias free. Since bias exists in the world and machine learning algorithms need a reference in order to be trained, then they will inherently have bias. This problem seems to be growing over time given our society's increased dependency on machine learning algorithms. Said dependency ironically exists as a means to combat bias, however the use of machine learning algorithms seems to only be perpetuating the problem, since the biases we are trying to combat are the same biases that are used when training a machine learning algorithm.</p>
+    <h2>Unit Test</h2>
+    <p>Overall, the unit test wasn’t very difficult and I got a perfect score. Most likely this was because the test contained recycled questions from exercises within the modules I had done previously. The questions were good though and helped put the lessons from the modules into more real life context.</p>
+    <p><a href="Final Project CS1030.pdf">Report</a></p>
+  </body>
+</html>
