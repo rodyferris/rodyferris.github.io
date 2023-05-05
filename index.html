@@ -13,12 +13,40 @@
       Then, I opened a Google Sheets file and 
       imported the csv file to be analyzed. </p>
     <h2>Process</h2>
-    <p>Hi, my name is [Your Name] and I am a [Your Profession]. I am passionate about [Your Interests] and enjoy [Your Hobbies]. I graduated from [Your Education Background] and have been working in the field of [Your Profession] for [Number of Years].</p>
-    <h2>My Skills</h2>
-    <ul>
-      <li>[Skill 1]</li>
-      <li>[Skill 2]</li>
-      <li>[Skill 3]</li>
-    </ul>
+    <p>The goal of this analysis is to narrow the data from the 
+        given set down to just chocolate sold in the United States
+        as well as organize the chocolate sales by type of chocolate 
+        sold. In order to accomplish this I began by trimming fat 
+        from the original data source. The original data included a 
+        lot of collumns that were unnecessary for the data I was 
+        looking for. I began by deleting all the data on the seller,
+        which was followed by deletion of cost, cost per unit, profit
+        , profit percentage, sale amount. The only data I needed was 
+        the units sold. After deleting those columns I needed to sort
+        the chocolate sales by region and filter out all sales not in
+        the United States. Accomplishing this required sorting the 
+        region collumn alphabetically. Once rows were sorted this way 
+        all of the sales were grouped up by region. Next, I simpiliy 
+        deleted all the sales that were'nt in the United States. Next,
+        I had to group the sales by what kind of chocolate was sold. 
+        So I deleted the region column since I didn't need it anymore,
+        then I alphabatized the data by what kind of chocolate was 
+        sold so that all the sales would be organized by chocolate type.
+        Finally, I created a new chart in order to add up the total 
+        ammount of each kind of chocolate sold. I did this by creating
+        a row for each type of chocolate sold and then a corresponding
+        column for how many units of that chocolate sold. I determined 
+        the nummber of units sold by using the SUM function in Google 
+        Sheets in order to get the total number of units sold from each
+        individual sale tallied up.
+    </p>
+    <h2>Results</h2>
+    <p><img src="Units Sold vs. Product.pdf" alt="Graph of Data"></p>
+    <p>Based on the graph the result for which chocolate sold the most 
+        seems to be very close between 70% Dark Bites and Rasberry 
+        Choco. But by using Google Sheets it is clear that Rasberry
+        Choco has the most units sold at 912 units, whicle 70% Dark 
+        Bites has 903 sales.
+    </p>
   </body>
 </html>
